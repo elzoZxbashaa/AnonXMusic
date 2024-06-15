@@ -22,7 +22,7 @@ from AnonXMusic import app
 from pyrogram import Client, filters
 from config import OWNER_ID
 
-##حقوق المطور بسبس @A1RTR
+##حقوق المطور الزوز@V_K_Z
 
 def get_file_id(msg: Message):
     if msg.media:
@@ -74,14 +74,14 @@ async def devatari(_, query: CallbackQuery):
 
 
     await query.message.reply_text(f"<b>≭︰تم إرسال استدعائك إلى مطور البوت .\n\n≭︰Dev ~ ⦗ @R7_OX ⦘ .</b>")
-##حقوق المطور بسبس @A1RTR 
+##حقوق المطور الزوز @A1RTR 
 @app.on_message(
     command(["المطور"])
     & filters.group
   
 )
 async def rsexs(client, message):
-    usr = await app.get_chat("R7_OX")
+    usr = await app.get_chat("V_K_Z")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"≭︰Dev Name ↬ ⦗ {name} ⦘\n≭︰Dev User ↬ ⦗ @{usr.username} ⦘\n≭︰Dev id ↬ ⦗ {usr.id} ⦘",  
