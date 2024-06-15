@@ -13,7 +13,7 @@ from AnonXMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 from AnonXMusic import app
                 
 @app.on_message(
-    command(["سيمو","اسلام","عم الكون","Simo","SIMO","eslam","ESLAM","المطور اسلام"])
+    command(["زوز","الزوز","عم الكون","zoz","ZOZ","elzoz","ELZOZ","المطور الزوز"])
     & filters.group
 )
 async def yas(client, message):
@@ -32,15 +32,15 @@ async def yas(client, message):
     )
 
 @app.on_message(
-    command(["رويس","روس","RoWeS","ROWES","rowes","Rowes"])
+    command(["زوز","الزوز","elzoz","zoz","elzoz","ELZOZ"])
     & filters.group
 )
 @app.on_message(
-    command(["‹ رويس ›"])
+    command(["‹ الزوز ›"])
     & filters.private 
 )
 async def yas(client, message):
-    usr = await client.get_chat("R7_OX")
+    usr = await client.get_chat("V_K_Z")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"\nNamE : {name}\nUseR : @{usr.username}\niD : {usr.id}\nBiO : {usr.bio}\n\n", 
@@ -58,7 +58,7 @@ async def yas(client, message):
     & filters.group
 )
 async def yas(client, message):
-    usr = await client.get_chat("AIleXaBoT")
+    usr = await client.get_chat("K6O_BoT")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"Hi My Name iS AleXa\n\nA Strong Telegram Bot To Play Music & Video iN The Voice Chat.\n\nJust Add Me To Your Group And Send /help . ", 
@@ -66,14 +66,14 @@ async def yas(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/AIleXaBoT?startgroup=true")
+                        name, url=f"https://t.me/K60_BoT?startgroup=true")
                 ],
             ]
         ),
     )
 
 @app.on_message(
-    command(["محمد","جينيص","GENIUS ","Genius"])
+    command(["الزوز","باشا","BASHA ","BASHA"])
     & filters.group
 )
 async def yas(client, message):
