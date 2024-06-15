@@ -1,4 +1,4 @@
-![Music-AleXA](https://telegra.ph/file/6d2c75e56f63a0668ec6e.jpg)
+![https://graph.org/file/b99af003abe9ac05b77e4.jpg)
 #˛ 𝗠𝘂𝘀𝗶𝗖 𝗔𝗹𝗲𝗫𝗮 🇵🇸 .
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+AleXa+source+AN+ADVANCE+BOT)](https://github.com/rowes-star)
