@@ -32,15 +32,15 @@ async def khalid(client: Client, message: Message):
         [
             [
                     InlineKeyboardButton(
-                        "‹ 𖡄͡𝗥͜𝗼͡𝗪͡𝗲͜𝗦 › ", url=f"https://t.me/R7_OX"),
+                        "‹ 𝙴𝙻𝚉𝙾𝚉𝖝𝙿𝙰𝚂𝙷𝙰 › ", url=f"https://t.me/V_K_Z"),
                 ],[
                     InlineKeyboardButton(
-                        "‹ ChanneL .›", url=f"https://t.me/vc_xm"), 
+                        "‹ ChanneL .›", url=f"https://t.me/zxxlz"), 
                     InlineKeyboardButton(
-                        "‹ SupporT .›", url=f"https://t.me/R3_QX"),
+                        "‹ SupporT .›", url=f"https://t.me/qkpqp"),
                 ],[
                     InlineKeyboardButton(
-                        "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/AIleXaBoT?startgroup=true"),
+                        "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/K6O_BoT?startgroup=true"),
             ]
         ]
          ),
