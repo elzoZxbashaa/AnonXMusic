@@ -25,8 +25,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 ) 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/RQ_SF")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/R3_QX")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/zxxlz")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/qkpqp")
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
