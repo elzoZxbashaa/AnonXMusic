@@ -90,7 +90,7 @@ async def mmmezat(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "「 𝗥𝗼𝗪𝗲𝗦 」", url=f"https://t.me/R7_OX"),                        
+                        "「 𝙴𝙻𝚉𝙾𝚉𝖝𝙿𝙰𝚂𝙷� 」", url=f"https://t.me/V_K_Z"),                        
                  ],[
                 InlineKeyboardButton(
                         "close", callback_data="close"),
