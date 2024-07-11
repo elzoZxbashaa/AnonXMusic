@@ -24,7 +24,7 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "",
+        "value": "7127236595:AAHVTVXhqcyL2F05jh29AJwHWRbwgZJx2HE",
         "required": true
       },
       "MONGO_DB_URI": {
@@ -34,17 +34,17 @@
       },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "5749137933",
+        "value": "6552587183",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram v2 String Session from @StringFatherBot on Telegram.",
-        "value": "",
+        "value": "BAGi8fAACdGZ8Yhi693Dy0YYUrxDvGLxBcE6UtPK15g6BlzRNO6pYtkiPjyTdM5HHekYD_C9crJWXjEyjdGtWsZF1lm_XsteDacoQ1WXQKYfmxv4uwTFaLAeulVUC1zEJQwEa27VvuIqBlfayraXdQrcr33pnK4jyjUAX7Vj7NcjvKC2SwQe9E8OkOmEPm6K44o0RRREyXjhWRgU7MWUZtFZKjGp1opBkjVDQiT6D_z-yax0emM5385JurWuE0JDvlQFTMpqsU1MqsyN0kNFG-6gMlCAzvTHdyxc2NuN8-qsM2FoaGfEBpgIOrKv_m6C93Y7qcxlt9-j4T1CDAKSWhEAalrc2wAAAAGrfZyAAA",
         "required": true
       },
       "BOT_USERNAME": {
         "description": "يوزر البوت بدون @",
-        "value": "K6O_BoT",
+        "value": "ELZ0ZBoT",
         "required": true
         
       },
@@ -60,7 +60,7 @@
       },
       "LOGGER_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
-        "value": "",
+        "value": "-1002125560826",
         "required": true
       }
     },
