@@ -73,7 +73,7 @@ async def devatari(_, query: CallbackQuery):
                                      f"<b>≭︰ايدي المجموعة ~ ⦗ {chat} ⦘ .\n</b>")
 
 
-    await query.message.reply_text(f"<b>≭︰تم إرسال استدعائك إلى مطور البوت .\n\n≭︰Dev ~ ⦗ @R7_OX ⦘ .</b>")
+    await query.message.reply_text(f"<b>≭︰تم إرسال استدعائك إلى مطور البوت .\n\n≭︰Dev ~ ⦗ @V_K_Z ⦘ .</b>")
 ##حقوق المطور الزوز @A1RTR 
 @app.on_message(
     command(["المطور"])
