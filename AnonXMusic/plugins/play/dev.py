@@ -22,7 +22,7 @@ from AnonXMusic import app
 from pyrogram import Client, filters
 from config import OWNER_ID
 
-##حقوق المطور الزوز@V_K_Z
+##حقوق المطور الزوز @V_K_Z
 
 def get_file_id(msg: Message):
     if msg.media:
@@ -46,7 +46,7 @@ def get_file_id(msg: Message):
                 setattr(obj, "message_type", message_type)
                 return obj
 
-##حقوق المطور بسبس @A1RTR 
+##حقوق المطور الزوز @V_K_Z
 @app.on_callback_query(filters.regex("devatari"))
 async def devatari(_, query: CallbackQuery):
 
@@ -74,7 +74,7 @@ async def devatari(_, query: CallbackQuery):
 
 
     await query.message.reply_text(f"<b>≭︰تم إرسال استدعائك إلى مطور البوت .\n\n≭︰Dev ~ ⦗ @V_K_Z ⦘ .</b>")
-##حقوق المطور الزوز @A1RTR 
+##حقوق المطور االزوز V_K_Z 
 @app.on_message(
     command(["المطور"])
     & filters.group
@@ -98,4 +98,4 @@ async def rsexs(client, message):
             ]
         ),
                              )
-##حقوق المطور بسبس @A1RTR 
+##حقوق المطور الزوز @V_K_Z
