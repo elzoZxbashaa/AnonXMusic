@@ -40,7 +40,7 @@ async def khalid(client: Client, message: Message):
                         "‹ SupporT .›", url=f"https://t.me/qkpqp"),
                 ],[
                     InlineKeyboardButton(
-                        "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/K6O_BoT?startgroup=true"),
+                        "‹ اضف البوت لمجموعتك ›", url=f"https://t.me/ELZ0ZBoT?startgroup=true"),
             ]
         ]
          ),
