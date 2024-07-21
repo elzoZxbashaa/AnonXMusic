@@ -1,10 +1,10 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 import requests 
-from AarohiX import app
+from AnonXMusic import app
 
 muted = []
-@app.on_message(filters.command("كتم", "") & filters.group)
+@app.on_message(filters.command("كتم", "اسكت") & filters.group)
 async def ktm(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
@@ -24,7 +24,7 @@ async def ktm(_: Client, message: Message):
         else: await message.reply("↢لازم تكون أدمن لاستخدام هالأمر", reply_to_message_id=message.message_id)
 
 
-@app.on_message(filters.command("الغاء كتم", "") & filters.group)
+@app.on_message(filters.command("الغاء كتم", "فك كتم") & filters.group)
 async def unktm(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
@@ -62,7 +62,7 @@ async def ms7maktom(_: Client, message: Message):
 @app.on_message(filters.text & filters.group, group=928)
 async def ktmf(_: Client, message: Message):
     if message.from_user.id in muted: await message.delete()
-@app.on_message(filters.command("حظر", "") & filters.group)
+@app.on_message(filters.command("حظر", "برا يكسمك") & filters.group)
 async def tard(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
@@ -83,7 +83,7 @@ async def tard(_: Client, message: Message):
             return
         else: await message.reply("↢لازم تكون أدمن لاستخدام هالأمر", reply_to_message_id=message.message_id)
 
-@app.on_message(filters.command("الغاء حظر", "") & filters.group)
+@app.on_message(filters.command("الغاء حظر", "فك حظر") & filters.group)
 async def untard(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
