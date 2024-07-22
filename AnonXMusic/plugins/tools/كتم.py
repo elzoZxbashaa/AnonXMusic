@@ -4,7 +4,7 @@ import requests
 from AnonXMusic import app
 
 muted = []
-@app.on_message(filters.command("كتم", "") & filters.group)
+@app.on_message(filters.command("كتم", "اسكت") & filters.group)
 async def ktm(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
@@ -24,7 +24,7 @@ async def ktm(_: Client, message: Message):
         else: await message.reply("◍ يجب ان تكون معك رتبه على الاقل لكى تستطيع كتم العضو \n\n √", reply_to_message_id=message.message_id)
 
 
-@app.on_message(filters.command("الغاء كتم", "") & filters.group)
+@app.on_message(filters.command("الغاء كتم", "ازاله كتم") & filters.group)
 async def unktm(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
@@ -43,7 +43,7 @@ async def unktm(_: Client, message: Message):
         else: await message.reply_text("- يجب ان تكون ادمن على الاقل لإستخدام هذا الامر.", reply_to_message_id=message.message_id)
 
 
-@app.on_message(filters.command("المكتومين", ""))
+@app.on_message(filters.command("المكتومين", "المعرصين"))
 async def maktom(_: Client, message: Message):
     if not len(muted): return await message.reply_text("لا يوجد مكتومين \n\n √")
     names = "\n".join(["- " + (await app.get_chat(id)).first_name for id in muted])
@@ -51,7 +51,7 @@ async def maktom(_: Client, message: Message):
     await message.reply(caption, reply_to_message_id=message.message_id)
 
 
-@app.on_message(filters.command("مسح المكتومين", ""))
+@app.on_message(filters.command("مسح المكتومين", "مسح المعرصين"))
 async def ms7maktom(_: Client, message: Message):
     member = member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
     if member["result"]["status"] not in ["creator", "administrator"]: return await message.reply_text(f"يجب ان تكون ادمن علي الاقل لاستخدام هذا الامر\n│ \n : {message.reply_to_message.from_user.mention}\n\n بنجاح ")
@@ -67,7 +67,7 @@ async def ktmf(_: Client, message: Message):
     if message.from_user.id in muted: await message.delete()
     
 
-@app.on_message(filters.command("حظر", "") & filters.group)
+@app.on_message(filters.command("حظر", "برا يكسمك") & filters.group)
 async def tard(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
@@ -88,7 +88,7 @@ async def tard(_: Client, message: Message):
             return
         else: await message.reply("- يجب ان تكون ادمن على الاقل لإستخدام هذا الامر.", reply_to_message_id=message.message_id)
 
-@app.on_message(filters.command("الغاء حظر", "") & filters.group)
+@app.on_message(filters.command("الغاء حظر", "فك حظر") & filters.group)
 async def untard(_: Client, message: Message):
     if message.reply_to_message:
         member = requests.get(f"https://api.telegram.org/bot{app.bot_token}/getChatMember?chat_id={message.chat.id}&user_id={message.from_user.id}").json()
