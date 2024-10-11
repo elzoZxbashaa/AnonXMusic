@@ -61,19 +61,19 @@ async def yas(client, message):
     usr = await client.get_chat("K6O_BoT")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"Hi My Name iS AleXa\n\nA Strong Telegram Bot To Play Music & Video iN The Voice Chat.\n\nJust Add Me To Your Group And Send /help . ", 
+    await message.reply_photo(photo,       caption=f"Hi My Name iS Elzoz n\nA Strong Telegram Bot To Play Music & Video iN The Voice Chat.\n\nJust Add Me To Your Group And Send /help . ", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/K60_BoT?startgroup=true")
+                        name, url=f"https://t.me/ElZoZ?startgroup=true")
                 ],
             ]
         ),
     )
 
 @app.on_message(
-    command(["الزوز","باشا","BASHA ","BASHA"])
+    command(["الزوز","باشا","غشيم ","الـ غشيم"])
     & filters.group
 )
 async def yas(client, message):
