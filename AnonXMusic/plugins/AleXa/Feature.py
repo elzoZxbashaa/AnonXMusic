@@ -33,7 +33,7 @@ from random import  choice, randint
 
 
 @app.on_message(
-    filters.command(["مميزات","مميزات زد إي"], "")
+    filters.command(["مميزات","مميزات الزوز"], "")
 & filters.group
  )
 async def mmmezat(client, message):
